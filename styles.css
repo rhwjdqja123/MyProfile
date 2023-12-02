@@ -1,0 +1,128 @@
+* {
+  margin: 0px 10px 0px 10px;
+  padding: 0px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 100px 1fr; /* 왼쪽 칸 100px, 오른쪽 칸 나머지 영역 */
+  gap: 20px; /* 칸 사이의 간격 */
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.daram {
+  background-image: url(../image/daram1.jpg);
+
+  background-size: 100% 100%;
+}
+
+.profile_sub {
+  margin-left: 55px; /* 오른쪽으로 30픽셀 간격 */
+}
+
+.name_sub3 {
+  display: grid;
+  background-color: #f0f0f0;
+}
+ul,
+li {
+  list-style: none;
+}
+.skill {
+  display: grid;
+  justify-items: center;
+}
+
+.slidebox {
+  max-width: 310px; /* 적절한 크기로 변경하세요 */
+  margin: 0 auto;
+  position: relative;
+}
+.slidebox .slidelist {
+  position: relative;
+  white-space: nowrap;
+  font-size: 30px;
+  overflow: hidden;
+}
+.slidebox .slidelist .slideitem {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ffffff;
+  width: 100%;
+  transition: all 1s;
+}
+.slidebox .slidelist .slideitem > a {
+  display: inline;
+  width: 100px;
+
+  position: relative;
+}
+
+.slidebox .slidelist .slideitem > a img {
+  max-width: 100%;
+  width: 40px; /* 이미지가 부모 요소의 가로 크기에 맞게 확대되도록 설정 */
+}
+.slidebox .slide-control [class*="control"] label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slidebox .slide-control [class*="control"] label.prev {
+  left: -50px;
+  background: #ffffff url("./image/left.png") center center / 50% no-repeat;
+}
+.slidebox .slide-control [class*="control"] label.next {
+  right: -50px;
+  background: #ffffff url("./image/rigth.png") center center / 50% no-repeat;
+}
+
+[name="slide"] {
+  display: none;
+}
+#slide01:checked ~ .slidelist .slideitem {
+  left: 0;
+}
+#slide02:checked ~ .slidelist .slideitem {
+  left: -100%;
+}
+#slide03:checked ~ .slidelist .slideitem {
+  left: -200%;
+}
+
+.slide-control [class*="control"] {
+  display: none;
+}
+#slide01:checked ~ .slide-control .control01 {
+  display: block;
+}
+#slide02:checked ~ .slide-control .control02 {
+  display: block;
+}
+#slide03:checked ~ .slide-control .control03 {
+  display: block;
+}
+
+/* .skill_circle1 {
+  background-image: url(../image/html2.png);
+  width: 100px;
+  height: 100px;
+  background-size: 100% 100%;
+ border-radius를 50%로 설정하여 원 모양으로 만듦 
+
+  color: white;
+  font-weight: bold;
+} */
