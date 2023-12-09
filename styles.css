@@ -4,24 +4,38 @@
 }
 
 header {
+  position: fixed;
+  margin: 0px;
+
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr auto;
-
+  background-color: rgba(187, 189, 185, 0.644);
+  width: 100%;
+  left: 0px;
   padding: 20px;
-  background-color: #f0f0f0;
+  top: 0px;
+}
+.one {
+  width: 40px;
+}
+body {
+  font-size: 1.2em;
+  margin-top: 1px;
+  background: url(./image/back.avif);
 }
 
 .profile {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 100px 1fr; /* 왼쪽 칸 100px, 오른쪽 칸 나머지 영역 */
   gap: 20px; /* 칸 사이의 간격 */
   padding: 20px;
-  background-color: #f0f0f0;
 }
 
 .daram {
   background-image: url(../image/daram1.jpg);
-
+  height: 150%;
   background-size: 100% 100%;
 }
 
@@ -30,14 +44,15 @@ header {
 }
 
 .name_sub3 {
+  margin-top: 70px;
   display: grid;
-  background-color: #f0f0f0;
 }
 ul,
 li {
   list-style: none;
 }
 .skill {
+  margin-top: 40px;
   display: grid;
   justify-items: center;
 }
@@ -57,7 +72,7 @@ li {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  background-color: #ffffff;
+
   width: 100%;
   transition: all 1s;
 }
@@ -82,12 +97,15 @@ li {
   cursor: pointer;
 }
 .slidebox .slide-control [class*="control"] label.prev {
+  top: 54px;
   left: -50px;
-  background: #ffffff url("./image/left.png") center center / 50% no-repeat;
+  background: url("./image/left.png") center center / 50% no-repeat;
 }
 .slidebox .slide-control [class*="control"] label.next {
+  top: 54px;
   right: -50px;
-  background: #ffffff url("./image/rigth.png") center center / 50% no-repeat;
+
+  background: url("./image/rigth.png") center center / 50% no-repeat;
 }
 
 [name="slide"] {
@@ -126,51 +144,55 @@ li {
   color: white;
   font-weight: bold;
 } */
+.project {
+  margin-top: 40px;
+  font-size: 2em;
+}
 .project__img1 {
   background-image: url("./image/tate.png");
-  height: 100px;
+  height: 150px;
   background-size: 100% 100%;
 }
 .project__box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  margin-top: 10px;
+  grid-gap: 20px;
+  margin-top: 30px;
 }
 
 .project__img2 {
   background-image: url("./image/ball.jpg");
-  height: 100px;
+  height: 150px;
   background-size: 100% 100%;
 }
 .project__img3 {
   background-image: url("./image/sum.jpg");
-  height: 100px;
+  height: 150px;
   background-size: 100% 100%;
 }
 .project__img4 {
   background-image: url("./image/block.jpg");
-  height: 100px;
+  height: 150px;
   background-size: 100% 100%;
 }
 .project__img5 {
   background-image: url("./image/gpt.png");
-  height: 100px;
+  height: 150px;
   background-size: 100% 100%;
 }
 .project__img6 {
   background-image: url("./image/naver.png");
-  height: 100px;
+  height: 150px;
   background-size: 100% 100%;
 }
 .project__img7 {
   background-image: url("./image/change.jpg");
-  height: 100px;
+  height: 150px;
   background-size: 100% 100%;
 }
 .project__img8 {
   background-image: url("./image//bite.png");
-  height: 100px;
+  height: 150px;
   background-size: 100% 100%;
 }
 .info1 {
@@ -182,4 +204,7 @@ li {
   font-size: 18px;
   font-weight: 600;
   color: rgb(60, 60, 60);
+}
+.info3 {
+  font-size: 12px;
 }
