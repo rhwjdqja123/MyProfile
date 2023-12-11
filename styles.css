@@ -1,6 +1,7 @@
 * {
   margin: 0px 10px 0px 10px;
   padding: 0px;
+  font-family: sans-serif;
 }
 
 header {
@@ -19,7 +20,13 @@ header {
 .one {
   width: 40px;
 }
+.project1 {
+  margin-top: 40px;
+  font-size: 2em;
+  position: relative;
+}
 body {
+  height: 1800px;
   font-size: 1.2em;
   margin-top: 1px;
   background: url(./image/back.avif);
@@ -46,6 +53,8 @@ body {
 .name_sub3 {
   margin-top: 70px;
   display: grid;
+  position: absolute;
+  animation: slide 1s ease-out;
 }
 ul,
 li {
@@ -58,6 +67,7 @@ li {
 }
 
 .slidebox {
+  top: 200px;
   max-width: 310px; /* 적절한 크기로 변경하세요 */
   margin: 0 auto;
   position: relative;
@@ -145,8 +155,11 @@ li {
   font-weight: bold;
 } */
 .project {
+  height: 100px;
+  top: 200px;
   margin-top: 40px;
   font-size: 2em;
+  position: relative;
 }
 .project__img1 {
   background-image: url("./image/tate.png");
@@ -157,9 +170,32 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
-  margin-top: 30px;
-}
+  margin-top: 500px;
+  position: absolute;
 
+  width: 90%;
+}
+.project__boxx {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 560px;
+  position: absolute;
+
+  width: 90%;
+}
+.project__boxxx {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 710px;
+
+  position: absolute;
+
+  width: 90%;
+}
 .project__img2 {
   background-image: url("./image/ball.jpg");
   height: 150px;
@@ -195,6 +231,7 @@ li {
   height: 150px;
   background-size: 100% 100%;
 }
+
 .info1 {
   margin: 5px 0;
   font-size: 13px;
@@ -207,4 +244,87 @@ li {
 }
 .info3 {
   font-size: 12px;
+}
+.project16 {
+  visibility: hidden;
+}
+
+.foot {
+  position: absolute;
+  top: 1800px;
+  margin: 0px;
+  display: grid;
+  box-sizing: border-box;
+
+  grid-template-columns: 1fr 1fr auto;
+  font-size: 12px;
+  width: 100%;
+
+  padding: 16px;
+  justify-content: space-between;
+}
+footer {
+  width: 100%;
+  height: 40px; /* footer의 높이 */
+
+  bottom: 0;
+  left: 0;
+}
+@keyframes slide {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 29px;
+    opacity: 1;
+  }
+}
+@keyframes slidee {
+  from {
+    bottom: -450px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+@keyframes slideee {
+  from {
+    bottom: -450px;
+  }
+  to {
+    bottom: -280px;
+  }
+}
+@keyframes slideeee {
+  from {
+    bottom: -900px;
+  }
+  to {
+    bottom: -750px;
+  }
+}
+@keyframes disappear {
+  from {
+    bottom: -550px;
+  }
+  to {
+    bottom: 250px;
+  }
+}
+@keyframes disappearr {
+  from {
+    bottom: -850px;
+  }
+  to {
+    bottom: -150px;
+  }
+}
+@keyframes disappearrr {
+  from {
+    bottom: -1050px;
+  }
+  to {
+    bottom: -600px;
+  }
 }
