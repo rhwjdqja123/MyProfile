@@ -282,10 +282,10 @@ footer {
 }
 @keyframes slidee {
   from {
-    bottom: -450px;
+    bottom: -550px;
   }
   to {
-    bottom: 0px;
+    bottom: 530px;
   }
 }
 @keyframes slideee {
@@ -309,7 +309,7 @@ footer {
     bottom: -550px;
   }
   to {
-    bottom: 250px;
+    bottom: 200px;
   }
 }
 @keyframes disappearr {

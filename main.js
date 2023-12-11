@@ -6,6 +6,8 @@ window.addEventListener("scroll", function () {
 
   if (value > 150) {
     mainText.style.animation = "disappear 1s ease-out forwards";
+  } else {
+    mainText.style.animation = "slide 1s ease-out";
   }
 });
 
@@ -17,6 +19,8 @@ window.addEventListener("scroll", function () {
 
   if (value > 400) {
     mmainText.style.animation = "disappearr 1s ease-out forwards";
+  } else {
+    mmainText.style.animation = "slide 1s ease-out";
   }
 });
 let mmmainText = document.querySelector(".project__boxxx");
@@ -27,5 +31,7 @@ window.addEventListener("scroll", function () {
 
   if (value > 500) {
     mmmainText.style.animation = "disappearrr 1s ease-out forwards";
+  } else {
+    mmmainText.style.animation = "slide 1s ease-out";
   }
 });
