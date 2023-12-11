@@ -29,7 +29,7 @@ window.addEventListener("scroll", function () {
   let value = window.scrollY;
   console.log("scrollY", value);
 
-  if (value > 500) {
+  if (value > 700) {
     mmmainText.style.animation = "disappearrr 1s ease-out forwards";
   } else {
     mmmainText.style.animation = "slide 1s ease-out";
